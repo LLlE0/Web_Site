@@ -46,11 +46,13 @@ body {
 .main {
  
  background-color: aliceblue;
- padding-top: 10%;
+ padding-top: 3.5%;
  padding-bottom: 5%;
  height: 100vh;
  background-image: url("../img/bg2.png");
  background-size: cover;
+ justify-content: space-between;
+ align-content: space-between;
  background-position: center;
 }
 
@@ -58,9 +60,8 @@ body {
 .main h1 {
  margin: 0;
  font-size: x;
-
- background-color: aliceblue;
- text-shadow: 2px 2px 2px #000;
+ padding-bottom: 5%;
+font-weight: bold;
 }
 
 .footer {
@@ -85,30 +86,39 @@ body {
 
 .wrapper {
     padding: 1%;
-    justify-content:space-between;
-    
-    width: 90vw;
+    justify-content:baseline;
+    width: 99vw;
+   
     margin: 0, auto;
+    display: flex;
+    flex-direction: row;
     height: auto;
-    background-color: #000;
 }
 
 .wrapper2{
-    padding: 1% 1% 1% 1%;
+    font-size: calc( 25px + (100vw / 1280));
+    color: #212121;
+    padding-top: 3%;
+    padding-left: 1%;
+    padding-bottom: 3%; 
     display: inline-block;
-    text-align: center;
-    background-color: blueviolet;
+    text-align:justify;
+    width: 40%;
 }
 
 .wrapper2 ul{
-    font-size: calc( 20px + (100vw / 1280));
+    font-size: calc( 25px + (100vw / 1280));
     text-align: left;
+    align-self:flex-start;
 }
-
+.wrapper2 li {
+    color:#323232;
+    padding-bottom: 1%;
+}
 .pic{
     display: inline-block;
-    content: url("../img/test.jpg");
-    width: 100px;
-    height: 100px;
+    content: url("../img/girl.png");
+    height: 70vh;
+    width: 110vh;
 
 }
